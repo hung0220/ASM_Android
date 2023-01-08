@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:background="#FD7741"
+    android:id="@+id/draglauout">
+
+            <com.google.android.material.navigation.NavigationView
+                android:id="@+id/nav_view"
+                app:headerLayout="@layout/header"
+                app:menu="@menu/main_menu"
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:ignore="MissingConstraints" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                android:layout_height="match_parent"
+            </ScrollView>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toobar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EDEDED">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+
+
+                <EditText
+                    android:id="@+id/editTimtghichu"
+                    android:layout_width="278dp"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="13dp"
+
+                    android:background="@drawable/boder_timkiem"
+                    android:drawableLeft="@drawable/search"
+                    android:ems="10"
+                    android:hint="Tìm Kiếm"
+                    android:textSize="15sp"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/btnTimHangHoa"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="52dp"
+                    android:padding="5dp"
+                    android:src="@drawable/searchhihi">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/btnMore"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="0dp"
+                    android:padding="5dp"
+                    android:src="@drawable/menua"
+                    android:text="More" />
+
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+
+            android:id="@+id/btn1"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:padding="4dp">
+            <LinearLayout
+                android:id="@+id/btnThemghichu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/cutom_button_hh"
+                    android:gravity="center"
+                    android:text="Thêm Ghi Chú"
+                    android:textColor="@color/white"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:background="#E7EBEA"
+                android:id="@+id/lvghichu"
+                android:layout_width="match_parent"
+                android:layout_height="650dp">
+
+            </ListView>
+        </RelativeLayout>
+
+   </LinearLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    android:paddingBottom="5dp"
+    android:weightSum="5"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.7"
+
+        >
+
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="231dp"
+                android:layout_height="145dp"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="95dp"
+                android:src="@drawable/lakcafe">
+
+            </ImageView>
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/backGoHome"-->
+            <!--                android:layout_width="50dp"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:layout_gravity="right"-->
+            <!--                android:layout_marginLeft="5dp"-->
+            <!--                android:layout_marginTop="5dp"-->
+            <!--                android:src="@drawable/gobackicon">-->
+
+            <!--            </ImageView>-->
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/broder_from"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:padding="20dp"
+            android:weightSum="6">
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Login"
+
+
+                    android:textColor="#2B2B2B"
+                    android:textSize="29sp"
+                    android:textStyle="normal">
+
+                </TextView>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edtUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="    Username"
+                        android:padding="15dp"
+                        android:drawableLeft="@drawable/icon_home"
+                        android:textColor="#191717"
+                        android:textColorHint="#A8A8A8"
+                        android:textStyle="bold">
+
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/edtPassword"
+                        android:layout_marginTop="30dp"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="    Password"
+                        android:inputType="textPassword"
+                        android:textColorHint="#A8A8A8"
+                        android:textStyle="bold"
+                        android:drawableLeft="@drawable/passworda"
+                        android:textColor="#191717">
+
+                    </EditText>
+                    <CheckBox
+                        android:id="@+id/ckbRemember"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Remember password"
+                        android:textColor="#2B2B2B">
+
+                    </CheckBox>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:padding="10dp"
+                android:id="@+id/text"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                >
+                <TextView
+                    android:id="@+id/tvHoiGoFromSignUp"
+                    android:gravity="bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Don't have an account ?"
+                    android:textColor="#2B2B2B"
+                    >
+
+                </TextView>
+
+                <TextView
+
+                    android:id="@+id/tvOnGoFromSignUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/tvHoiGoFromSignUp"
+                    android:gravity="bottom"
+                    android:text="Register"
+                    android:textColor="#E61A5F">
+
+                </TextView>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                android:padding="7dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/broder_btn_gray_whiter"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:id="@+id/btnOnSignInNow"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Sign in"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:gravity="center"
+            android:text="LakCafe.com"
+            android:textSize="10sp">
+
+        </TextView>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,257 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toobar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EDEDED">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+
+            <EditText
+                android:id="@+id/editTimKiem"
+                android:layout_width="278dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="13dp"
+
+                android:background="@drawable/boder_timkiem"
+                android:drawableRight="@drawable/search"
+                android:ems="10"
+                android:hint="Tìm Kiếm"
+                android:textSize="15sp"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp" />
+
+            <ImageView
+                android:id="@+id/imgUser"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="52dp"
+                android:padding="5dp"
+                android:src="@drawable/admin">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/btnMore"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0dp"
+                android:padding="5dp"
+                android:src="@drawable/menua"
+                android:text="More" />
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+                android:id="@+id/btnQlNV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+
+                    android:background="@drawable/broder_from_nv"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="8"
+                        android:padding="6dp"
+                        android:src="@drawable/hinhnv"></ImageView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="4"
+                        android:orientation="vertical"
+                        android:padding="15sp">
+
+                        <TextView
+                        android:id="@+id/textql"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+
+                            android:text="Quản Lí nhân Viên"
+                            android:textSize="25sp"
+                            android:textStyle="normal"></TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+
+                            android:text="Thông Tin Nhân Viên: Học Và Tên, SĐT, Ngày Sinh, Địa chỉ..."
+                            android:textSize="12sp"
+                            android:textStyle="normal"></TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btnQLHH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="3"
+            android:background="@drawable/broder_from_kh"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="11"
+                android:padding="6dp"
+                android:src="@drawable/khohanghggggg"></ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:padding="15sp">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:text="Quản Lí Kho Hàng"
+                    android:textSize="25sp"
+                    android:textStyle="normal"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+
+                    android:text="Thông Tin Kho Hàng: Số Lượng Còn Lại Của Các Nguyên Liệu"
+                    android:textSize="12sp"
+                    android:textStyle="normal"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/btnGhichu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="3"
+            android:background="@drawable/broder_from_ghichu"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="11"
+                android:padding="6dp"
+                android:src="@drawable/noteeeeee"></ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:padding="15sp">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:text="Ghi Chú"
+                    android:textSize="25sp"
+                    android:textStyle="normal"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+
+                    android:text="Ghi chú: Số Lượng Còn Lại Của Các Nguyên Liệu và linh tinh nữa"
+                    android:textSize="12sp"
+                    android:textStyle="normal"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="13.5">
+
+
+        <RelativeLayout
+            android:id="@+id/frameview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            ></RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.5"
+        android:fontFamily="casual"
+        android:gravity="bottom"
+        android:textStyle="bold"
+        app:backgroundTint="#fc5a31"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/menu_bottom">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</LinearLayout>

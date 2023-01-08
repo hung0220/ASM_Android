@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    android:paddingBottom="5dp"
+    android:weightSum="5"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+
+                android:layout_width="200dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="45dp"
+
+                android:src="@drawable/lakcafe">
+
+            </ImageView>
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/broder_from"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:weightSum="8">
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Register"
+
+                    android:textColor="#2B2B2B"
+                    android:textSize="29sp"
+                    android:textStyle="normal">
+
+                </TextView>
+                <LinearLayout
+                    android:layout_marginTop="-20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:id="@+id/newFirstName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:hint="First name*"
+                            android:padding="15dp"
+                            android:textColor="#191717"
+                            android:textColorHint="#A8A8A8"
+                            android:textStyle="bold">
+
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/newLastName"
+                            android:layout_marginLeft="10dp"
+                            android:padding="15dp"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Last name*"
+                            android:textColorHint="#A8A8A8"
+                            android:textStyle="bold"
+                            android:textColor="#191717">
+
+                        </EditText>
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/newUsername"
+                        android:layout_marginTop="25dp"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Username"
+                        android:textColorHint="#A8A8A8"
+                        android:textStyle="bold"
+                        android:textColor="#191717">
+
+                    </EditText>
+                    <EditText
+                        android:id="@+id/newPassword"
+                        android:layout_marginTop="25dp"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:textColorHint="#A8A8A8"
+                        android:textStyle="bold"
+                        android:textColor="#191717">
+
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/newGmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:hint="Gmail"
+                        android:padding="15dp"
+                        android:textColor="#191717"
+                        android:textColorHint="#A8A8A8"
+                        android:textStyle="bold">
+
+                    </EditText>
+
+                    <CheckBox
+                        android:id="@+id/chkRemember1"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tôi đồng ý với các điều khoản"
+                        android:textColor="#2B2B2B">
+
+                    </CheckBox>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:padding="10dp"
+                android:id="@+id/text"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                >
+                <TextView
+                    android:id="@+id/tvHoiGoFromSignUp"
+                    android:gravity="bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Already a member?"
+                    android:textColor="#2B2B2B"
+                    >
+
+                </TextView>
+                <TextView
+                    android:id="@+id/singin"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/tvHoiGoFromSignUp"
+                    android:gravity="bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Sign in"
+                    android:textColor="#E61A5F"
+                    >
+
+                </TextView>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                android:padding="7dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/broder_btn_gray_whiter"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:id="@+id/btnsinup"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Sign Up"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

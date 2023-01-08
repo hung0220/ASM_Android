@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:padding="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:background="@drawable/boder_nv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    android:layout_weight="6">
+    <LinearLayout
+
+
+        android:layout_weight="1.9"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="right"
+            android:textAlignment="gravity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#131313"
+            android:text="ID:"></TextView>
+        <TextView
+            android:gravity="right"
+            android:textAlignment="gravity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#131313"
+            android:text="Tên:"></TextView>
+        <TextView
+            android:gravity="right"
+            android:textAlignment="gravity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#131313"
+            android:text="Giới Tính:"></TextView>
+        <TextView
+            android:gravity="right"
+            android:textAlignment="gravity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Chức Vụ:"></TextView>
+        <TextView
+            android:gravity="right"
+            android:textAlignment="gravity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#131313"
+            android:text="Ngày Vào:"></TextView>
+        <TextView
+            android:gravity="right"
+            android:textAlignment="gravity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#131313"
+            android:text="Lương:"></TextView>
+        <TextView
+            android:gravity="right"
+            android:textAlignment="gravity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#131313"
+            android:text="Số ĐT:"></TextView>
+        <TextView
+            android:gravity="right"
+            android:textAlignment="gravity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#131313"
+            android:text="Địa Chi:"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_weight="0.7"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID:"></TextView>
+        <TextView
+            android:id="@+id/txtTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên:"></TextView>
+        <TextView
+            android:id="@+id/txtGioiTinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giới Tính:"></TextView>
+        <TextView
+            android:id="@+id/txtChucVu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chức Vụ:"></TextView>
+        <TextView
+            android:id="@+id/txtNgayVaoLam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày Vào:"></TextView>
+        <TextView
+            android:id="@+id/txtLuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lương:"></TextView>
+        <TextView
+            android:id="@+id/txtSoDT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số ĐT:"></TextView>
+        <TextView
+            android:id="@+id/txtDiaChi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Địa Chi:"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_weight="2.2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btnNVXoa"
+            android:layout_width="30dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/thungracc" />
+
+
+        <ImageView
+
+            android:id="@+id/btnsuaNV"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/sua" />
+
+    </LinearLayout>
+</LinearLayout>
+
+
+</LinearLayout>
+
+
+</LinearLayout>

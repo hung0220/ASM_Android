@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:background="#FD7741"
+    android:id="@+id/draglauout">
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            app:headerLayout="@layout/header"
+            app:menu="@menu/main_menu"
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+        </ScrollView>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toobar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EDEDED">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+
+
+                <EditText
+                    android:id="@+id/editTimKiemHangHoa"
+                    android:layout_width="278dp"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="13dp"
+
+                    android:background="@drawable/boder_timkiem"
+                    android:drawableLeft="@drawable/search"
+                    android:ems="10"
+                    android:hint="Tìm Kiếm"
+                    android:textSize="15sp"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/btnTimHangHoa"
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="72dp"
+                    android:padding="5dp"
+                    android:src="@drawable/searchhihi">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/btnMore"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="0dp"
+                    android:padding="5dp"
+                    android:src="@drawable/menua"
+                    android:text="More" />
+
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="246dp"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#4EAFFB">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tongsohanghoa"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Cập Nhật Thông Tin Hàng Hóa"
+                        android:textColor="@color/white"
+                        android:textSize="13sp">
+
+                    </TextView>
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:id="@+id/btn1"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+
+                android:padding="4dp">
+                <LinearLayout
+                    android:id="@+id/btnSoLuongtangDan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/cutom_button_hh"
+                        android:gravity="center"
+                        android:text="Số Lương Tăng Dần"
+                        android:textColor="@color/white"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/btnSoLuongGiamdam"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:layout_weight="1.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cutom_button_hh"
+                        android:gravity="center"
+                        android:text="Số Lương Giảm Dần"
+                        android:textColor="@color/white"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:background="#F3ECEC"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:padding="10dp">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/broder"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical"
+                            android:padding="7dp"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:text="Tên Hàng Hóa"
+                                    android:textColor="@color/black"
+                                    android:textSize="10dp">
+
+                                </TextView>
+
+                                <EditText
+                                    android:id="@+id/editTenhh"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/broder"
+                                    android:hint="Tên Hàng Hóa"
+                                    android:padding="5dp"
+                                    android:textSize="14sp">
+
+                                </EditText>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:text="Tình Trạng"
+                                    android:textColor="@color/black"
+                                    android:textSize="10dp">
+
+                                </TextView>
+
+                                <EditText
+                                    android:id="@+id/editTinhTrang"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/broder"
+                                    android:hint="Tình Trạng"
+                                    android:padding="5dp"
+                                    android:textSize="14sp">
+
+                                </EditText>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:text="Số Lượng"
+                                    android:textColor="@color/black"
+                                    android:textSize="10dp">
+
+                                </TextView>
+
+                                <EditText
+                                    android:id="@+id/editSoLuong"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/broder"
+                                    android:hint="Số Lượng"
+                                    android:padding="5dp"
+                                    android:textSize="14sp">
+
+                                </EditText>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:text="Ghi Chú"
+                                    android:textColor="@color/black"
+                                    android:textSize="10dp">
+
+                                </TextView>
+
+                                <EditText
+                                    android:id="@+id/editGhiChu"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/broder"
+                                    android:hint="Ghi Chú"
+                                    android:padding="5dp"
+                                    android:textSize="14sp">
+
+                                </EditText>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btn"
+                android:background="#F3ECEC"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:padding="2dp">
+                <LinearLayout
+                    android:id="@+id/btnThemHangHoa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:layout_weight="1.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cutom_button_hh"
+                        android:gravity="center"
+                        android:text="THÊM "
+                        android:textColor="@color/white"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/btnSuaHangHoa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:layout_weight="1.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cutom_button_hh"
+                        android:gravity="center"
+                        android:text="Sửa"
+                        android:textColor="@color/white"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="540dp"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ListView
+                        android:id="@+id/lvHangHoa"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp">
+
+                    </ListView>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
